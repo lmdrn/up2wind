@@ -1,0 +1,28 @@
+.banner {
+  height: 70vh;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('banner.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+}
+
+.banner-content {
+  margin-left: 30px;
+  padding: 130px 0;
+}
+
+.green-container {
+  position: fixed;
+  z-index: 5;
+  width: 500px;
+  background-color: #3AB795;
+  border-radius: 10px;
+  position: absolute;
+  top: 80px;
+  right: -50px;
+}
+
+.image-eolienne img {
+  margin-right: 30px;
+  max-width: 100px;
+}
