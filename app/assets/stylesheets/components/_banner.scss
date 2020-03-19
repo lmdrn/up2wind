@@ -1,3 +1,24 @@
+.item-a {
+  grid-area: header;
+}
+
+.item-b {
+  grid-area: sidebar;
+}
+
+.item-c {
+  grid-area: footer;
+}
+
+.u-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  'header header header header'
+  'footer footer footer .';
+}
+
 .banner {
   height: 70vh;
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('banner.jpg');
@@ -6,23 +27,44 @@
   position: relative;
 }
 
+.banner-img img {
+  width: 230px;
+  position: absolute;
+  right: 150px;
+  top: 80px;
+}
+
 .banner-content {
   margin-left: 30px;
   padding: 130px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#banner-typed-text {
+  padding: -5px;
+  box-shadow: inset 0 -8px 0 0 #3AB795;
 }
 
 .green-container {
-  position: fixed;
-  z-index: 5;
-  width: 500px;
   background-color: #3AB795;
-  border-radius: 10px;
-  position: absolute;
-  top: 80px;
-  right: -50px;
+  padding: 10px;
 }
 
-.image-eolienne img {
-  margin-right: 30px;
-  max-width: 100px;
+.presentation-icons i {
+  text-align: center;
+  font-size: 100px;
+  opacity: .1;
+  margin: 50px 100px;
 }
+
+.inline-text {
+  display: flex;
+  margin-left: 180px;
+}
+
+.inline-text-block {
+  margin-top : 50px;
+  margin-right: -180px;
+}
+
