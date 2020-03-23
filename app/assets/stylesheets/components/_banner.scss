@@ -1,70 +1,85 @@
-.item-a {
-  grid-area: header;
-}
-
-.item-b {
-  grid-area: sidebar;
-}
-
-.item-c {
-  grid-area: footer;
-}
-
-.u-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-  'header header header header'
-  'footer footer footer .';
-}
-
-.banner {
+.left-box {
   height: 70vh;
-  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), image-url('banner.jpg');
-  background-size: cover;
-  background-position: bottom center;
-  position: relative;
-}
-
-.banner-img img {
-  width: 230px;
-  position: absolute;
-  right: 150px;
-  top: 80px;
-}
-
-.banner-content {
-  margin-left: 30px;
-  padding: 130px 0;
+  padding: 50px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #banner-typed-text {
   padding: -5px;
-  box-shadow: inset 0 -8px 0 0 #3AB795;
+  box-shadow: inset 0 -18px 0 0 #3AB795;
 }
 
-.green-container {
-  background-color: #3AB795;
-  padding: 10px;
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.presentation-icons i {
-  text-align: center;
+.description-content  {
+  text-align: left;
+}
+
+.description-content i {
   font-size: 100px;
   opacity: .1;
   margin: 50px 100px;
 }
 
-.inline-text {
-  display: flex;
-  margin-left: 180px;
+.description-text {
+  margin-top : 50px;
+  margin-right: -200px;
+  display: inline-block;
 }
 
-.inline-text-block {
-  margin-top : 50px;
-  margin-right: -180px;
+.right-box {
+  height: 70vh;
+  background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url('wheat.jpg');
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+.image-eolienne {
+  width: 300px;
+  position: absolute;
+  top: 30px;
+}
+
+.third-box {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.fa-chevron-down {
+  font-size: 40px;
+}
+
+.arrow {
+  margin-left:-20px;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
 
