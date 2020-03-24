@@ -1,6 +1,6 @@
 class EoliennesController < ApplicationController
   def index
-    @eoliennes = Eolienne.All
+    @eoliennes = Eolienne.all
   end
 
   def show
