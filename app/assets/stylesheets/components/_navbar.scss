@@ -20,3 +20,22 @@
   font-size: 20px;
   margin: 0;
 }
+
+
+@media(max-width: 750px) {
+  .nav-link {
+    font-size: 14px;
+  }
+  .navbar-lewagon {
+    padding: 15px 15px;
+  }
+}
+
+@media(max-width: 658px) {
+  .nav-link {
+  font-size: 14px;
+  }
+  .navbar-lewagon {
+    padding: 10px 5px;
+  }
+}
