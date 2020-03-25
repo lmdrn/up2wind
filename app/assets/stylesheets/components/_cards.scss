@@ -83,3 +83,45 @@
     color: black;
   }
 }
+
+@media(max-width: 950px) {
+  .each-card {
+    width: 250px;
+    margin: 10px 10px;
+  }
+  .card-text {
+    width: 250px;
+  }
+}
+
+@media(max-width: 810px) {
+  .each-card {
+    width: 220px;
+    margin: 10px 10px;
+  }
+  .card-text {
+    width: 238px;
+  }
+}
+
+@media(max-width: 750px) {
+  .product-box {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 570px) {
+  .each-card {
+    width: 250px;
+    margin: 10px 10px;
+  }
+  .card-text {
+    width: 250px;
+  }
+}
+
+@media(max-width: 470px) {
+  .product-header {
+    margin-top: 50px;
+  }
+}

@@ -13,7 +13,13 @@
 
 .image-eolienne {
   width: 300px;
+  display: block;
   position: absolute;
   top: 30px;
 }
 
+@media(max-width: 470px) {
+  .right-box {
+    display: none;
+  }
+}

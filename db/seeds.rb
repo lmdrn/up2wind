@@ -3,7 +3,7 @@ Eolienne.destroy_all
 
 puts "Creating eoliennes"
 
-file1 = URI.open('app/assets/images/Eolienne_City.jpg')
+file1 = URI.open('https://res.cloudinary.com/dd6miiair/image/upload/v1585124825/Eolienne_City_iw11hm.jpg')
 eolienne1 = Eolienne.new(name: 'Éolienne Pack Avancé', price: '1500', description: 'Éolienne avec fond custom Up2wind')
 eolienne1.photo.attach(io: file1, filename: 'eolienne1.jpg', content_type:'image/jpg')
 eolienne1.save

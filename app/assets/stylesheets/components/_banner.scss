@@ -5,11 +5,20 @@
 
 .left-box {
   height: 70vh;
-  padding: 50px;
+  padding: 10px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.banner-content {
+  padding-top: 30px;
+  text-align: left;
+  h3 {
+    font-size: 27px;
+  }
 }
 
 #banner-typed-text {
@@ -18,24 +27,165 @@
 }
 
 .description {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
 .description-content  {
-  text-align: left;
+  width: 175px;
+  text-align: center;
+  position: relative;
+  padding: 50px 50px;
 }
 
 .description-content i {
   font-size: 100px;
   opacity: .1;
-  margin: 50px 100px;
 }
 
 .description-text {
-  margin-top : 50px;
-  margin-right: -200px;
+  width: 100%;
   display: inline-block;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  text-align: center;
 }
 
+@media(max-width: 1082px) {
+  .banner-content {
+    h1 {
+      font-size: 37px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media(max-width: 990px) {
+  .banner-content {
+    text-align: center;
+    h1 {
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+  }
+
+  .third-box {
+    i {
+      padding-top: 50px;
+    }
+  }
+}
+
+@media(max-width: 720px) {
+  .banner-content {
+    text-align: center;
+    h1 {
+      padding-top: 30px;
+      font-size: 50px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+}
+
+
+@media(max-width: 610px) {
+  .banner-content {
+    text-align: center;
+
+    h1 {
+      font-size: 37px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media(max-width: 470px) {
+  .col-sm-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .left-box {
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), image-url('wheat.jpg');
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+      font-size: 20px;
+      text-align: center;
+      span {
+        font-size: 20px;
+      }
+    }
+
+  .description-content i {
+    opacity: .2;
+}
+}
+
+@media(max-width: 450px) {
+  .left-box {
+    padding-top: 70px;
+  }
+  .banner-content{
+    h1 {
+      font-size: 34px;
+    }
+    h3 {
+        font-size: 24px;
+        text-align: center;
+        span {
+          font-size: 24px;
+        }
+    }
+  }
+}
+
+@media(max-width: 412px) {
+  .banner-content{
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        span {
+          font-size: 20px;
+        }
+    }
+  }
+}
+
+@media(max-width: 350px) {
+.banner-content{
+  padding-top: 50px;
+  padding-left: 0px;
+    h1 {
+      font-size: 27px;
+    }
+    h3 {
+        font-size: 17px;
+        text-align: center;
+        span {
+          font-size: 17px;
+        }
+    }
+  }
+}
