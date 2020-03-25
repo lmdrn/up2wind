@@ -1,6 +1,7 @@
 .product-header {
   margin: 0 auto;
   text-align: center;
+  letter-spacing: .1rem;
 }
 
 .product-box {
@@ -53,6 +54,8 @@
 }
 
 .card-text {
+  text-align: center;
+  font-family: $body-font;
   width: 270px;
   height: 100px;
   padding: 20px 20px;
@@ -60,10 +63,12 @@
   border-radius: 5px;
   h3 {
     font-size: 20px;
+    letter-spacing: .04rem;
   }
   p {
+    font-family: $body-font;
     font-size: 15px;
-    color: rgb(140,140,140);
+    color: black;
   }
 }
 
