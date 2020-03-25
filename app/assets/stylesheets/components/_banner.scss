@@ -15,9 +15,14 @@
 
 .banner-content {
   padding-top: 30px;
-  text-align: left;
+  text-align: center;
+  h1{
+    font-size: 60px;
+    letter-spacing: .2rem;
+  }
   h3 {
-    font-size: 27px;
+    font-size: 33px;
+    font-family: $body-font;
   }
 }
 
@@ -27,10 +32,8 @@
 }
 
 .description {
-  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .description-content  {
@@ -52,6 +55,13 @@
   bottom: 50px;
   right: 0px;
   text-align: center;
+  h5 {
+   letter-spacing: .2rem;
+  }
+  p {
+    font-family: $body-font;
+  }
+
 }
 
 @media(max-width: 1082px) {
@@ -60,7 +70,7 @@
       font-size: 37px;
     }
     h3 {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 }
@@ -72,7 +82,7 @@
       font-size: 60px;
     }
     h3 {
-      font-size: 40px;
+      font-size: 33px;
     }
   }
 
@@ -91,7 +101,7 @@
       font-size: 50px;
     }
     h3 {
-      font-size: 30px;
+      font-size: 28px;
     }
   }
 }
@@ -105,7 +115,7 @@
       font-size: 37px;
     }
     h3 {
-      font-size: 25px;
+      font-size: 22px;
     }
   }
 }
@@ -149,10 +159,10 @@
       font-size: 34px;
     }
     h3 {
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
         span {
-          font-size: 24px;
+          font-size: 20px;
         }
     }
   }
