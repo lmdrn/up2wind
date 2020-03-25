@@ -11,8 +11,18 @@
   font-family: $body-font;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  padding: -2px;
+  box-shadow: inset 0 -20px 0 0 #3AB795;
+}
+
 .nav-link {
   font-family: $body-font;
+  color: black;
   a {
     color: black;
   }
