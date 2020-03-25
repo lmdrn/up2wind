@@ -52,7 +52,9 @@
           <div class='product-box'>
             <% @eoliennes.each do |eolienne| %>
               <div class='each-card' id="eoliennes">
-                <div class='card-img'><%= image_tag(eolienne.photo, height: 'auto', width: '270', class: 'img-fluid') %></div>
+                <div class='card-img'>
+                  <%= image_tag(eolienne.photo, height: 'auto', width: '270', class: 'img-fluid') %>
+                </div>
                 <div class='card-text'>
                   <h3><%= eolienne.name %></h3>
                   <p><%= eolienne.description %></p>
