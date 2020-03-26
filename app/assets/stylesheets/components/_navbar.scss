@@ -1,4 +1,5 @@
 .navbar-lewagon {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
@@ -6,8 +7,15 @@
   z-index: 500;
   width: 100%;
   background: white;
-  padding: 20px 15px;
+  padding: 15px;
 }
+
+
+.align-items {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-brand h1 {
   font-family: $body-font;
 }
@@ -16,10 +24,9 @@
   color: black;
 }
 
-// .navbar-light .navbar-nav .nav-link:hover {
-//   padding: -2px;
-//   box-shadow: inset 0 -20px 0 0 #3AB795;
-// }
+.navbar .navbar-expand-sm .navbar-light .navbar-lewagon {
+
+}
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
@@ -37,6 +44,8 @@
 //LINKS NAVBAR
 
 .nav-link {
+  display: flex;
+  align-items: center;
   font-family: $headers-font;
   letter-spacing: 0.08em;
   color: black;
@@ -46,8 +55,14 @@
   }
 }
 
-.btn-connect {
+.nav-connect {
+  margin-bottom: 5px;
   margin-left: 10px;
+  border: 3px solid #3AB795;
+  border-radius: 2px;
+  :hover {
+    background-color: #3AB795;
+  }
 }
 
 
@@ -64,14 +79,13 @@
 }
 //ANIMATED LINKS
 
-a {
+.nav-connect-sans a {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  padding-bottom: 1px;
 }
 
-a:after {
+.nav-connect-sans a:after {
   content: '';
   display: block;
   margin: auto;
@@ -81,7 +95,7 @@ a:after {
   transition: width .5s ease, background-color .5s ease;
 }
 
-a:hover::after {
+.nav-connect-sans a:hover::after {
   width: 100%;
   background: #3AB795;
 }
