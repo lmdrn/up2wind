@@ -1,4 +1,5 @@
 .navbar-lewagon {
+  align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -15,18 +16,10 @@
   color: black;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  padding: -2px;
-  box-shadow: inset 0 -20px 0 0 #3AB795;
-}
-
-.nav-link {
-  font-family: $body-font;
-  color: black;
-  a {
-    color: black;
-  }
-}
+// .navbar-light .navbar-nav .nav-link:hover {
+//   padding: -2px;
+//   box-shadow: inset 0 -20px 0 0 #3AB795;
+// }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
@@ -41,6 +34,59 @@
   margin: 0;
 }
 
+//LINKS NAVBAR
+
+.nav-link {
+  font-family: $headers-font;
+  letter-spacing: 0.08em;
+  color: black;
+  font-size: 18px;
+  a {
+    color: black;
+  }
+}
+
+.btn-connect {
+  margin-left: 10px;
+}
+
+
+.button-eol-navbar {
+  text-align: center;
+  border-radius: 2px;
+  background-color: #3AB795;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-color: transparent;
+  p {
+    margin: 0;
+    color: black;
+  }
+}
+//ANIMATED LINKS
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 5px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  background: #3AB795;
+}
+
+//MEDIA QUERIES
 
 @media(max-width: 750px) {
   .nav-link {
