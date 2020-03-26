@@ -24,9 +24,26 @@
   right: 150px;
 }
 
+@media(max-width: 990px) {
+  .image-eolienne {
+  position: absolute;
+  bottom: -453px;
+  right: 270px;
+  }
+}
+
+@media(max-width: 580px) {
+  .image-eolienne {
+  position: absolute;
+  right: 145px;
+  }
+}
 
 @media(max-width: 470px) {
   .right-box {
+    display: none;
+  }
+  .image-eolienne {
     display: none;
   }
 }
