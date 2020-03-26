@@ -1,2 +1,84 @@
-<h1>Eoliennes#show</h1>
-<p>Find me in app/views/eoliennes/show.html.erb</p>
+<div class="my-container">
+  <div class="my-container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12 left-eol">
+        <div class="eolienne-box img-fluid">
+          <%= image_tag(@eolienne.photo, class: 'img-fluid') %>
+          <div class="button-location">
+            <button class="button-eol">acheter</button>
+            <button class="button-eol">customiser</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12 right-eol">
+        <div class="eolienne-title">
+          <h1><%= @eolienne.name %></h1>
+          <div class='price-tag-eol'><span><%= @eolienne.price %>€</span></div>
+        </div>
+        <div class="eolienne-description">
+          <div class="eol-content">
+            <div class="eol-text">
+              <div class='small-title'><h5>Le saviez-vous ?</h5></div>
+              <p>
+                La puissance d'une éolienne (en kW, kilowatts) mesure sa 
+                capacité de production d'électricité. C'est une caractéristique
+                technique qui ne dépend que de l’éolienne en elle-même, et
+                <strong>non de l'endroit où elle est posée</strong>. Autrement
+                dit, une éolienne de 1 kW de puissance ne pourra pas fournir
+                plus d’énergie en 1 heure qu\'1 kWh même si elle est alimentée
+                en vent par un ouragan. Elle a l'avantage de fonctionner <strong>
+                sans avoir besoin de vent fort</strong>. Elle fonctionne également
+                sur <strong>360°</strong>, c’est-à-dire quelque soit l’axe du vent.
+              </p>
+            </div>
+          </div>
+          <div class="eol-content">
+            <div class="eol-text">
+              <div class='small-title'><h5>Fiche technique</h5></div>
+              <div class="eol-list">
+                <ul class='col-12 list-1'>
+                  <li><strong>Hauteur : </strong><%= @eolienne.height %></li>
+                  <li><strong>Largeur : </strong><%= @eolienne.width %></li>
+                  <li><strong>Poids : </strong><%= @eolienne.weight %></li>
+                  <li><strong>Taille de voile : </strong><%= @eolienne.size %></li>
+                  <li><strong>Puissance : </strong><%= @eolienne.engine %></li>
+                </ul>
+                <ul class='col-12 list-2'>
+                  <li><strong>Pied : </strong><%= @eolienne.base %></li>
+                  <li><strong> Matériaux : </strong><%= @eolienne.product %></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="eol-content">
+            <div class="eol-text">
+              <div class='small-title'><h5>Capacité de production</h5></div>
+              <p>La quantité totale d’énergie électrique produite par une 
+                éolienne domestique sur une période donnée est généralement
+                exprimée en « kiloWatt.heures » (kWh), c’est-à-dire la puissance
+                de production multipliée par la durée de production. Par exemple,
+                une éolienne de 5 kW qui tournerait à vitesse nominale pendant
+                1.000 heures produirait 5.000 kWh. La puissance approximative
+                d’une éolienne (en kW) peut être estimée à partir du diamètre
+                (en m) avec la loi empirique : Puissance = 0,15 x diamètre
+                ^2.15. <strong>L’éolienne domestique, dont les capacités de
+                production sont évidemment adaptées aux particuliers,
+                produit entre 100 W et 20 kW</strong>.
+              </p>
+              <h5>L’avantage de l’éolienne : le stockage</h5>
+                <p>
+                  L’avantage de l’éolienne, c’est que l’électricité que vous
+                  produisez peut être <strong>stockée</strong>. En effet, vous n’utilisez pas
+                  toujours l’électricité au moment exact où elle est produite
+                  par votre éolienne domestique. Votre petit éolien est relié à
+                  des batteries qui peuvent seulement <strong>stocker et redistribuer du
+                  courant continu</strong>. Un régulateur avec redresseur est ainsi placé
+                  entre l’éolienne domestique et les batteries. Un onduleur est
+                  installé après les batteries et avant votre maison pour
+                  <strong>transformer le courant continu en courant alternatif</strong>.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
