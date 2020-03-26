@@ -1,3 +1,10 @@
+.my-container-products {
+  padding: 80px;
+  background: linear-gradient(rgba(244,244,244,0.4),rgba(244,244,244,0.7)), image-url('wheat.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+
 .product-header {
   margin: 0 auto;
   text-align: center;
