@@ -24,10 +24,6 @@
   color: black;
 }
 
-.navbar .navbar-expand-sm .navbar-light .navbar-lewagon {
-
-}
-
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
@@ -79,13 +75,21 @@
 }
 //ANIMATED LINKS
 
+<<<<<<< HEAD
+.nav-connect a {
+=======
 .nav-connect-sans a {
+>>>>>>> master
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
 
+<<<<<<< HEAD
+.nav-connect a:after {
+=======
 .nav-connect-sans a:after {
+>>>>>>> master
   content: '';
   display: block;
   margin: auto;
@@ -95,7 +99,11 @@
   transition: width .5s ease, background-color .5s ease;
 }
 
+<<<<<<< HEAD
+.nav-connect a:hover::after {
+=======
 .nav-connect-sans a:hover::after {
+>>>>>>> master
   width: 100%;
   background: #3AB795;
 }
