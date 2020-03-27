@@ -1,6 +1,6 @@
-//VALUES
+//FONCT
 
-.left-value-1 {
+.left-fonct {
   padding: 30px;
   p {
     font-family: $body-font;
@@ -15,14 +15,20 @@
   padding: 30px;
 }
 
-.right-value-1 {
+.right-fonct {
+  padding: 30px;
   margin: 0 auto;
-  padding-right: 0px;
-  padding-left: 0px;
 }
 
-.img-values {
+.img-fonct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: block;
+  height: 80vh;
+  width: 80vh;
+  position: sticky;
+  top: 0;
 }
 
 // ANIMATED TITLE
@@ -48,14 +54,17 @@
   background: #3AB795;
 }
 
-//VALUES MEDIA QUERIES
+//FONCT MEDIA QUERIES
 
 @media(max-width: 920px) {
-  .img-values {
+  .img-fonct {
     display: none;
   }
-  .left-value-1 {
-    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), image-url('eol-winter.jpg');
+  .right-fonct {
+    padding: 0;
+  }
+  .left-fonct {
+    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), image-url('eol-out.jpeg');
     height: 100vh;
   }
   .eol-content-value {
@@ -67,27 +76,11 @@
   .eol-content-value {
     padding: 10px;
   }
-  .left-value-1 {
+  .left-fonct {
     padding: 5px;
     text-align: left;
     .link-anim {
       text-align: center;
     }
-  }
-}
-
-
-//FONCT MEDIA QUERIES
-
-@media(max-width: 1500px) {
-  .img-fonct {
-    display: none;
-  }
-  .left-value {
-    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), image-url('eol-out.jpg');
-    height: 100vh;
-  }
-  .eol-content-value {
-    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.2));
   }
 }

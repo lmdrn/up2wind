@@ -1,7 +1,5 @@
 .right-eol {
-  padding: 30px;
-  padding-top: 10px;
-  position: relative;
+  padding: 50px;
   p {
     font-family: $body-font;
     strong {
@@ -13,7 +11,6 @@
 .left-eol {
   padding-left: 0px;
   padding-right: 0px;
-  position: relative;
 }
 
 .eol-text {
@@ -23,27 +20,21 @@
   }
 }
 
-.price-tag-eol {
-  background-color: #3AB795;
-  padding: 5px 10px;
-  border-radius: 2px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 15px;
-  right: 201px;
-  p {
-    margin: 0;
-    color: black;
-  }
+.eolienne-box {
+  display: block;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
-.price-tag-eol:hover {
-  background-color: black;
-  color: white;
+.price-tag-eol-2 {
+  margin: 0px;
 }
+
+.eolienne-title {
+  padding-bottom: 30px;
+}
+
 
 .eol-list {
   display: flex;
@@ -59,7 +50,11 @@
   text-align: center;
   border-radius: 2px;
   background-color: #3AB795;
-  padding: 10px 114px;
+  padding: 5px 30px;
+  margin: 5px;
+  width: 100%;
+  font-size: 18px;
+  font-family: $headers-font;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-color: transparent;
   p {
@@ -77,3 +72,23 @@
   }
 }
 
+@media(max-width: 990px) {
+  .eolienne-box {
+    height: 20vh;
+    opacity: 0.3;
+  }
+  .eolienne-title {
+    text-align: center;
+  }
+}
+
+@media(max-width: 450px) {
+  .eolienne-box {
+    display: none;
+  }
+
+  .my-container {
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), image-url('weathercock.jpg');
+    background-position: center center;
+  }
+}
