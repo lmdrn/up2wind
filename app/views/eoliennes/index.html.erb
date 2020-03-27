@@ -48,28 +48,33 @@
     </div>
   </div>
 
-  <div class="product-container">
+  <div class="product-container" id="eoliennes">
     <div class="row">
       <div class="col">
         <div class='product-header'><h2>Choisissez votre pack</h2></div>
       </div>
-
     </div>
+
+
+
     <div class="row">
       <div class="col-12">
           <div class='product-box'>
             <% @eoliennes.each do |eolienne| %>
               <%= link_to eolienne_path(eolienne) do %>
-                <div class='each-card' id="eoliennes">
-                  <div class='card-img'>
-                    <%= image_tag(eolienne.photo, height: 'auto', width: '270', class: 'img-fluid') %>
-                  </div>
-                  <div class='card-text'>
-                    <h3><%= eolienne.name %></h3>
-                    <p><%= eolienne.description %></p>
-                    <div class='price-tag'><p><%= eolienne.price %>€</p></div>
+                <div class="slide-in">
+                  <div class="box">
+                    <span class="original">
+                      <%= image_tag(eolienne.photo, height: 'auto', width: '270', class: 'img-card img-fluid') %>
+                    </span>
+                    <div class="overlay">
+                      <h2><%= eolienne.name %></h2>
+                      <h5><%= eolienne.description %></h5>
+                      <h6><%= eolienne.price %>€</h6>
+                    </div>
                   </div>
                 </div>
+                <h2 class='card-title'><%= eolienne.name %></h2>
               <% end %>
             <% end %>
           </div>
