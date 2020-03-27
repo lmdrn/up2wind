@@ -1,0 +1,56 @@
+.left-value {
+  padding: 30px;
+  p {
+    font-family: $body-font;
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+.eol-content {
+  border: 5px solid #3AB795;
+  padding: 30px;
+}
+
+.right-value {
+  margin: 0 auto;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.img-fonct img {
+  height: 100vh;
+}
+
+// ANIMATED TITLE
+
+.link-anim h2 {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.link-anim h2:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 5px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.link-anim h2:hover::after {
+  width: 100%;
+  background: #3AB795;
+}
+
+
+// VIDEO
+
+.fonctionnement-video video {
+  width: 500px;
+  height: 300px;
+  background-position: center;
+}
